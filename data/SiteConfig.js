@@ -31,12 +31,12 @@ const config = {
     },
     {
       label: 'Twitter',
-      url: 'https://twitter.com/Vagr9K',
+      url: 'https://twitter.com/PedalDream',
       iconClassName: 'fa fa-twitter',
     },
     {
       label: 'Email',
-      url: 'mailto:vagr9k@gmail.com',
+      url: 'mailto:contact@guthries.dev',
       iconClassName: 'fa fa-envelope',
     },
   ],
