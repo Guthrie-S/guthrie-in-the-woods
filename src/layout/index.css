@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'National-Park-Regular';
+  src: url('../../content/assets/fonts/nationalpark-regular.woff')
+      format('woff'),
+    url('../../content/assets/fonts/nationalpark-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'National-Park-Heavy';
+  src: url('../../content/assets/fonts/nationalpark-heavy.woff') format('woff'),
+    url('../../content/assets/fonts/nationalpark-heavy.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   height: 100%;
 }
@@ -13,6 +30,19 @@ body {
   min-width: 100%;
 }
 
+h1 {
+  color: #ac685d;
+  font-size: 4rem;
+  font-family: 'National-Park-Heavy', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(127 95 223);
+  font-size: 3rem;
+  font-family: 'National-Park-Regular', sans-serif;
+}
+
 #___gatsby #gatsby-focus-wrapper {
   min-height: 100vh;
   min-width: 100vw;
@@ -22,5 +52,36 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
-  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 30px;
+  justify-items: center;
+  height: 24rem;
+  padding: 2rem;
+}
+
+.section1 {
+  grid-area: 1 / 1 / 3 / 3;
+  text-align: center;
+  text-shadow: 3px 4px 0px #1d1f21;
+}
+.section2 {
+  grid-area: 2 / 1 / 3 / 2;
+  text-align: center;
+  text-shadow: 3px 4px 0px #1d1f21;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../content/assets/guthrieinwoods.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
