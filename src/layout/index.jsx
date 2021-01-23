@@ -14,7 +14,7 @@ export default class MainLayout extends React.Component {
         <div className="background">
           <div className="container">
             <h1 className="section1">Is Guthrie In The Woods?</h1>
-            <h2 className="section2">Probably.</h2>
+            <h2 className="section2">Yes</h2>
           </div>
         </div>
       </div>
